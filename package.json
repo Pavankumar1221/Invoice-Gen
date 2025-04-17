@@ -5,11 +5,12 @@
   "type": "module",
   "homepage": "https://Pavankumar1221.github.io/Invoice-Gen",
   "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
-  "build": "vite build",
-  "dev": "vite"
-},
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "vite build",
+    "dev": "vite",
+    "test": "jest"
+  },
   "dependencies": {
     "@react-pdf/renderer": "^3.4.2",
     "@uidotdev/usehooks": "^2.4.1",
@@ -36,6 +37,13 @@
     "@types/react-dom": "^18.2.23",
     "@types/react-textarea-autosize": "^8.0.0",
     "gh-pages": "^6.3.0",
+    "jest": "^29.7.0",
     "prettier": "^3.2.5"
-  }
+  },
+  "jest": {
+  "testMatch": [
+    "**/tests/**/*.js",
+    "**/?(*.)+(spec|test).js"
+  ]
+}
 }
