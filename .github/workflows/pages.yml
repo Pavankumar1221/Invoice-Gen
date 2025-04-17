@@ -1,7 +1,8 @@
 name: Github Pages
+
 on:
   push:
-    branches: ['master']
+    branches: ['main']
   workflow_dispatch:
 
 permissions:
@@ -17,8 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: yarn
-      - run: yarn build --base=/react-invoice-generator/
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build App
+        run: npm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -34,5 +40,3 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
-        with:
-          path: dist
