@@ -1,10 +1,10 @@
 {
-  "home page": "https://github.com/Pavankumar1221/Invoice-Gen",
+  
   "name": "invoice-generator",
   "version": "0.2.1",
   "private": true,
   "type": "module",
-  "homepage": "https://Pavankumar1221.github.io/Invoice-Gen",
+  "homepage": "https://github.com/Pavankumar1221/Invoice-Gen",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
