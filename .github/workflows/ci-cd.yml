@@ -2,9 +2,9 @@ name: CI - React App
 
 on:
   push:
-    branches: [main]   # Trigger on push to main branch
+    branches: [main]   
   pull_request:
-    branches: [main]   # Trigger on PR to main
+    branches: [main]  
 
 jobs:
   build-and-test:
