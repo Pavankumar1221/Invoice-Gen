@@ -41,7 +41,7 @@ export const TInvoice = z.object({
   subTotalLabel: z.string(),
   taxLabel: z.string(),
   totalLabel: z.string(),
-  currency: z.string(),
+  currency: z.string().default('₹ '),
   notesLabel: z.string(),
   notes: z.string(),
   termLabel: z.string(),
